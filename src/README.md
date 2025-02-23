@@ -2,21 +2,21 @@
 home: true
 icon: house
 title: Cashbook官网
-heroImage: /favicon.png
+heroImage: /logo.svg
 # bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 # bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 # bgImageStyle:
 #   background-attachment: fixed
 heroText: Cashbook
-tagline: Docker部署的个人记账本！
+tagline: 适合家庭部署的私人记账本！
 actions:
-  - text: 部署手册
+  - text: 使用指南
     icon: lightbulb
-    link: ./demo/
+    link: ./guide/
     type: primary
 
-  - text: 使用指南
-    link: ./guide/
+  - text: 部署手册
+    link: ./deploy/
 
 # highlights:
 #   - header: 易于安装
@@ -30,3 +30,5 @@ actions:
 copyright: oldmoon.top
 footer: MIT 协议, 版权所有 © 2023-至今 DingDangDog
 ---
+
+![cashbook](/demo-dark.jpg)

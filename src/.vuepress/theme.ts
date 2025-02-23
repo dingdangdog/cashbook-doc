@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://oldmoon.top",
   },
 
-  logo: "/favicon.png",
+  logo: "/logo.svg",
 
   repo: "dingdangdog/cashbook-doc",
 
@@ -22,8 +22,9 @@ export default hopeTheme({
       // navbar
       navbar: enNavbar,
 
+      sidebar: false,
       // sidebar
-      sidebar: enSidebar,
+      // sidebar: enSidebar,
 
       footer: "Default footer",
 
@@ -42,7 +43,7 @@ export default hopeTheme({
       navbar: zhNavbar,
 
       // sidebar
-      sidebar: zhSidebar,
+      // sidebar: zhSidebar,
 
       footer: "默认页脚",
 
@@ -141,13 +142,13 @@ export default hopeTheme({
   plugins: {
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
     components: {
       components: ["Badge", "VPCard"],

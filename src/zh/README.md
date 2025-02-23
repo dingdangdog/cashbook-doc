@@ -2,13 +2,14 @@
 home: true
 icon: house
 title: 首页
-heroImage: /favicon.png
+heroImage: /logo.svg
 # bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 # bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 # bgImageStyle:
 #   background-attachment: fixed
 heroText: Cashbook
-tagline: Docker部署的个人记账本！
+tagline: 适合家庭部署的私人记账本！
+sidebar: false
 actions:
   - text: 使用指南
     icon: lightbulb
@@ -30,3 +31,5 @@ actions:
 copyright: oldmoon.top
 footer: MIT 协议, 版权所有 © 2023-至今 DingDangDog
 ---
+
+![demo-dark](/demo-dark.jpg)
