@@ -11,13 +11,13 @@ heroText: Cashbook
 tagline: 适合家庭部署的私人记账本！
 sidebar: false
 actions:
-  - text: 使用指南
+  - text: 部署手册
     icon: lightbulb
-    link: ./guide/
+    link: ./deploy/
     type: primary
 
-  - text: 部署手册
-    link: ./deploy/
+  - text: 演示站点
+    link: https://cashbook.oldmoon.top
 
 # highlights:
 #   - header: 易于安装
