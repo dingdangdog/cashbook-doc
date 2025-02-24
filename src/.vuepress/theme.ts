@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://oldmoon.top",
   },
 
-  logo: "/logo.svg",
+  logo: "/favicon.png",
 
   repo: "dingdangdog/cashbook-doc",
 

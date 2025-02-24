@@ -2,7 +2,7 @@
 home: true
 icon: house
 title: 首页
-heroImage: /logo.svg
+heroImage: /favicon.png
 # bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 # bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 # bgImageStyle:
@@ -12,11 +12,12 @@ tagline: 适合家庭部署的私人记账本！
 sidebar: false
 actions:
   - text: 部署手册
-    icon: lightbulb
+    icon: ic:baseline-install-desktop
     link: ./deploy/
     type: primary
 
-  - text: 演示站点
+  - text: 在线体验
+    icon: carbon:demo
     link: https://cashbook.oldmoon.top
 
 # highlights:
