@@ -4,6 +4,10 @@ icon: pajamas:question
 sidebar: false
 ---
 
+## 后台怎么进？
+
+你的网站访问URL拼接上 `/admin` 即可，如：`https://cashbook.oldmoon.top/admin`。
+
 ## 为什么一直密码错误？
 
 首先请你确认：是否是第一次部署？如果是，你需要登录后台（`管理端`）并创建用户后，使用创建的用户才能登录前台（`记账端`），后台的入口是 `服务地址/admin`。
