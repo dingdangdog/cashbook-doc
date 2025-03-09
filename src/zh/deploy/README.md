@@ -160,8 +160,6 @@ services:
     environment:
       DATABASE_URL: "postgresql://postgres:postgres@cashbook_db:5432/cashbook?schema=public" # 数据库链接，【请自行修改！与你的数据库一致】
       NUXT_DATA_PATH: "/app/data" # 数据存储未知，现在只有小票图片了，不建议修改
-      NUXT_APP_URL: "https://cashbook.oldmoon.top" # 服务根路径，如果有端口号，需要加上端口号
-      NUXT_AUTH_ORIGIN: "https://cashbook.oldmoon.top/api/auth" # 登录授权相关接口地址 【请自行修改域名/IP！最后要以 /api/auth 结尾！】
       NUXT_AUTH_SECRET: "auth_secret" # 前台登录加密使用的密钥 【自行修改！】
       NUXT_ADMIN_USERNAME: "admin" # 后台登录用户名
       # 【自行修改】后台登录密码，密码是加密后的，生成密码可前往 https://cashbook.oldmoon.top/admin/GetPassword 或独立部署后访问 `你的url/admin/GetPassword`
@@ -190,7 +188,7 @@ services:
 
 ### 二、只部署Cashbook
 
-如果你已经有了可以直接使用的 `Postgre` 数据库，可以选择只部署 `Cashook`，但是请自行尝试你的数据库连接应该如何配置！
+如果你已经有了可以直接使用的 `Postgre` 数据库，可以选择只部署 `Cashook`，但是需要你手动创建一个名为`cashbook`的数据库！然后自行修改你的数据库连接应该如何配置！
 
 - docker-compose.yaml 示例
 
@@ -206,8 +204,6 @@ services:
     environment:
       DATABASE_URL: "postgresql://postgres:postgres@172.17.0.1:5432/cashbook?schema=public" # 数据库链接，【请自行修改！与你的数据库一致】
       NUXT_DATA_PATH: "/app/data" # 数据存储未知，现在只有小票图片了，不建议修改
-      NUXT_APP_URL: "https://cashbook.oldmoon.top" # 服务根路径，如果有端口号，需要加上端口号
-      NUXT_AUTH_ORIGIN: "https://cashbook.oldmoon.top/api/auth" # 登录授权相关接口地址 【请自行修改域名/IP！最后要以 /api/auth 结尾！】
       NUXT_AUTH_SECRET: "auth_secret" # 前台登录加密使用的密钥 【自行修改！】
       NUXT_ADMIN_USERNAME: "admin" # 后台登录用户名
       # 【自行修改】后台登录密码，密码是加密后的，生成密码可前往 https://cashbook.oldmoon.top/admin/GetPassword 或独立部署后访问 `你的url/admin/GetPassword`
