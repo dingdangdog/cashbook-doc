@@ -8,6 +8,20 @@ sidebar: false
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113933520211714&bvid=BV19MF6efEW3&cid=28185985482&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
+## 版本对照表
+
+请阅读下面的版本对照表，选择适合你的版本进行部署！
+
+|数据库差异|latest(x86_64)|latest(arm64)|指定版本(x86_64)|指定版本(arm64)|
+|---|---|---|---|---|
+|pgsql(latest)|latest|latest-arm64|4.1.6|4.1.6-arm64|
+|pgsql|latest-pgsql|latest-arm64-pgsql|4.1.6-pgsql|4.1.6-arm64-pgsql|
+|mysql|latest-mysql|latest-arm64-mysql|4.1.6-mysql|4.1.6-arm64-mysql|
+|sqlite|latest-sqlite|latest-arm64-sqlite|4.1.6-sqlite|4.1.6-arm64-sqlite|
+|sqlserver|latest-sqlserver|latest-arm64-sqlserver|4.1.6-sqlserver|4.1.6-arm64-sqlserver|
+
+详情请查看 [DockerHub](https://hub.docker.com/repository/docker/dingdangdog/cashbook/tags)
+
 ## docker-compose配置文件说明
 
 > 提示：学会了`docker`，你就学会了在所有支持 `docker` 的机器上部署 `Cashbook`~
@@ -181,16 +195,12 @@ services:
 
 ### 其他数据库支持
 
-应用户需求，自 `4.1.4` 版本后，增加其他数据库支持的镜像，包括：`mysql`，`sqlite`！
+应用户需求，自 `4.1.6` 版本后，增加其他数据库支持的镜像，包括：`mysql`，`sqlite` 等数据库！
 
-使用方式为 `Docker` 镜像版本号后缀加上 `-mysql` / `-sqlite`，比如 `4.1.4-mysql` / `4.1.4-sqlite` / `4.1.4-pgsql`。
-
-无后缀镜像仍需要 `pgsql` 支持。
-
-> 提醒：未经过测试，请自行尝试！
+> 提醒：部分镜像未经过测试，不保证可以正常运行，请自行尝试！详见：[版本对照表](#版本对照表)
 
 ### APP
 
 有群友基于自己的使用开发了APP客户端，请自行了解！
 
-- [cashbook_app]https://github.com/houxiaoyi0722/cashbook_app
+- [cashbook_app](https://github.com/houxiaoyi0722/cashbook_app)
