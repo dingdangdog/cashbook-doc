@@ -32,7 +32,63 @@ copyright: oldmoon.top
 footer: MIT 协议, 版权所有 © 2023-至今 DingDangDog
 ---
 
-![cashbook](/demo-dark.jpg)
+## 🎨 主题预览
+
+### 📅 日历视图
+<div style="display: flex; justify-content: space-around; align-items: center; gap: 20px; margin: 20px 0;">
+  <div style="flex: 1; text-align: center;">
+    <h4>🌙 暗色主题</h4>
+    <img src="/dark.calendar.jpg" alt="暗色主题日历" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <h4>☀️ 明亮主题</h4>
+    <img src="/light.calendar.jpg" alt="明亮主题日历" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+  </div>
+</div>
+
+### 📊 图表分析
+<div style="display: flex; justify-content: space-around; align-items: center; gap: 20px; margin: 20px 0;">
+  <div style="flex: 1; text-align: center;">
+    <h4>🌙 暗色主题</h4>
+    <img src="/dark.chart.jpg" alt="暗色主题图表" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <h4>☀️ 明亮主题</h4>
+    <img src="/light.chart.jpg" alt="明亮主题图表" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+  </div>
+</div>
+
+### 💰 流水记录
+<div style="display: flex; justify-content: space-around; align-items: center; gap: 20px; margin: 20px 0;">
+  <div style="flex: 1; text-align: center;">
+    <h4>🌙 暗色主题</h4>
+    <img src="/dark.flows.jpg" alt="暗色主题流水" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <h4>☀️ 明亮主题</h4>
+    <img src="/light.flows.jpg" alt="明亮主题流水" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+  </div>
+</div>
+
+### 📱 移动端适配
+<div style="display: flex; justify-content: space-around; align-items: center; gap: 15px; margin: 20px 0;">
+  <div style="flex: 1; text-align: center;">
+    <h5>🌙 日历 - 暗色</h5>
+    <img src="/phone.dark.calendar.jpg" alt="手机端暗色日历" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <h5>☀️ 日历 - 明亮</h5>
+    <img src="/phone.light.calendar.jpg" alt="手机端明亮日历" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <h5>🌙 流水 - 暗色</h5>
+    <img src="/phone.dark.flows.jpg" alt="手机端暗色流水" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <h5>☀️ 流水 - 明亮</h5>
+    <img src="/phone.light.flows.jpg" alt="手机端明亮流水" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+  </div>
+</div>
 
 ## 主要功能
 
@@ -62,6 +118,6 @@ footer: MIT 协议, 版权所有 © 2023-至今 DingDangDog
 - [x] 自助平账（收入/支出抵消）；
 - [x] 共享账本（多用户共用一个账本）；
 - [x] 多数据库版本（PGSQL，MySQL，Sqlite）；
-- [ ] 移动端适配（难搞）；
+- [x] WEB移动端适配；
 - [ ] 主题系统（没做过，不会做，但想做）；
 - [ ] ……

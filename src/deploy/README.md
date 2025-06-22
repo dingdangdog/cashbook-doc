@@ -12,13 +12,13 @@ sidebar: false
 
 请阅读下面的版本对照表，选择适合你的版本进行部署！
 
-|数据库差异|latest(x86_64)|latest(arm64)|指定版本(x86_64)|指定版本(arm64)|
-|---|---|---|---|---|
-|pgsql(latest)|latest|latest-arm64|4.1.6|4.1.6-arm64|
-|pgsql|latest-pgsql|latest-arm64-pgsql|4.1.6-pgsql|4.1.6-arm64-pgsql|
-|mysql|latest-mysql|latest-arm64-mysql|4.1.6-mysql|4.1.6-arm64-mysql|
-|sqlite|latest-sqlite|latest-arm64-sqlite|4.1.6-sqlite|4.1.6-arm64-sqlite|
-|sqlserver|latest-sqlserver|latest-arm64-sqlserver|4.1.6-sqlserver|4.1.6-arm64-sqlserver|
+|latest|指定版本|数据库|系统自适应|
+|---|---|---|---|
+|latest|4.3.0|默认（pgsql）|x86/arm64|
+|latest-pgsql|4.3.0-pgsql|pgsql|x86/arm64|
+|latest-mysql|4.3.0-mysql|mysql|x86/arm64|
+|latest-sqlite|4.3.0-sqlite|sqlite|x86/arm64|
+|latest-sqlserver|4.3.0-sqlserver|sqlserver|x86/arm64|
 
 详情请查看 [DockerHub](https://hub.docker.com/repository/docker/dingdangdog/cashbook/tags)
 
@@ -66,7 +66,7 @@ services:
 
 ## Cashbook环境变量详解
 
-docker的环境变量，一般用于容器内部的一些常量配置，接下来将逐一 `Cashbook` 用到的环境变量：
+docker的环境变量，一般用于容器内部的一些常量配置，接下来将逐一介绍 `Cashbook` 用到的环境变量：
 
 ### 1. DATABASE_URL
 
