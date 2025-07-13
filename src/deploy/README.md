@@ -161,8 +161,8 @@ services:
       #POSTGRES_USER: postgres # 数据库用户名，不填默认为postgres
       POSTGRES_PASSWORD: postgres # 数据库密码 【自行修改！】
       POSTGRES_DB: cashbook
-    #ports:
-    #  - 5432:5432
+    ports:
+      - 5432:5432 #开发数据库端口，请【自行考虑】
 ```
 
 ### 方案2. 只部署Cashbook
