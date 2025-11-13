@@ -82,9 +82,9 @@ docker的环境变量，一般用于容器内部的一些常量配置，接下�
 
 ### 3. NUXT_AUTH_SECRET
 
-> 前台登录加密使用的密钥 （随意填写即可，无格式要求）【*建议请自行修改*】
+> 前台登录加密使用的密钥 （**注意：不能是纯数字**）【*建议请自行修改*】
 >
-> - *示例值*：`auth_secret`
+> - *示例值*：`auth_secret_123`
 
 ### 4. NUXT_ADMIN_USERNAME
 
@@ -149,7 +149,7 @@ services:
       - 9090:9090
   db:
     container_name: cashbook_db
-    image: postgres
+    image: postgres:17.4-alpine3.21
     restart: always
     #network_mode: "host"
     # set shared memory limit when using docker-compose
